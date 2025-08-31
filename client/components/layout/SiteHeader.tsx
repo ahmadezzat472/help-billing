@@ -7,10 +7,9 @@ export default function SiteHeader() {
     <header className="sticky top-0 z-40 w-full bg-background/70 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
       <div className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-3 group">
-          <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-brand to-primary shadow-sm" />
-          <span className="font-extrabold tracking-tight text-lg">
-            Purplex
-          </span>
+          <div>
+            <img src="/logo.svg" alt="KidsQueue Logo" width={180} height={44} />
+          </div>
         </Link>
         <nav className="hidden md:flex items-center gap-6 text-sm">
           <NavLink
